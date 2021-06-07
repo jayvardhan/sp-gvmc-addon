@@ -19,7 +19,7 @@ if ( ! defined( 'SPGMC_DIR' ) ) {
 }
 
 //Give Plugin activation dependency check
-function spgmc_give_dependency_check() {
+function spgmc_plugin_init() {
 
 	if ( current_user_can( 'activate_plugins' ) && !class_exists('Give') ) {
 
