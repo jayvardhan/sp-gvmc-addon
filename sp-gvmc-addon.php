@@ -29,7 +29,7 @@ function spgmc_plugin_init() {
 	} else {
 
 		add_filter( 'give-settings_get_settings_pages', function($settings) {
-			$settings[] = include SPGMC_DIR . '/inc/class-sputznik-tab.php';	
+			$settings[] = include SPGMC_DIR . '/inc/class-sputznik-give-settings-tab.php';	
 			return $settings;
 		} );
 
